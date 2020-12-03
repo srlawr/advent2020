@@ -15,16 +15,17 @@ public class First {
 
 	content.forEach(thisNumber->{
 
-	Stream<String> allNumbers = content.stream();
+	  Stream<String> allNumbers = content.stream();
 	
-        Stream<String> result = allNumbers.filter(secondNumber -> Integer.valueOf(secondNumber)+Integer.valueOf(thisNumber) == 2020);
+          Stream<String> result = allNumbers.filter(secondNumber -> 
+			  			    Integer.valueOf(secondNumber)+Integer.valueOf(thisNumber) == 2020);
 
-	result.forEach(thisOne->System.out.println(Integer.valueOf(thisOne)*Integer.valueOf(thisNumber)+" "));
-      });
+	  result.forEach(thisOne->System.out.println(Integer.valueOf(thisOne)*Integer.valueOf(thisNumber)));
+        });
 
  
     } catch (IOException ex) {
-
+	System.out.println("Try harder");
     }
   
   }

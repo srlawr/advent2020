@@ -15,7 +15,6 @@ public class Second {
 		
       String content = new String(Files.readAllBytes(Paths.get("passwords.txt")));
 
-
       Pattern p = Pattern.compile("(\\d*)-(\\d*)\\s(\\w):\\s(.*)");
       Matcher m = p.matcher(content);
       m.matches();
